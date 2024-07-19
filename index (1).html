@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>WELCOME</title>
+</head>
+
+<body>
+    <div class="col-lg-12 col-12"> 
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="font-size: 19px;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active " aria-current="page" href="">Home</a>
+                        <a class="nav-link" href="">Buy</a>
+                        <a class="nav-link" href="">Deals</a>
+                        <a class="nav-link" href="">Account</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="font-size: 19px;">
+            <div class="container-fluid">
+                ...
+                <button class="btn btn-secondary" id="cartButton" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</button>
+            </div>
+        </nav>
+        <!-- slides -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="22.jpg" class="d-block w-100" alt="1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="11.jpg" class="d-block w-100" alt="...2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="33.jpg" class="d-block w-100" alt="...3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <!-- project title in web -->
+        <div class="mx-auto p-2 alert alert-danger"
+            style="width:auto; font-size:23px; display:flex; justify-content:center">
+            FCM - FARMER'S CHOICE MART
+        </div>
+        <br>
+
+
+        <br><br>
+        <!-- small cards images details of images 91-380 lines -->
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/TOMATO.jpg" class="card-img-top" alt="Tomato">
+                <div class="card-body">
+                    <h5 class="card-title">Tomato</h5>
+                    <span class="badge rounded-pill bg-danger text-white">Fast selling</span>
+                    <p class="card-text">Fresh and juicy tomatoes.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Tomato" data-price="2.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.00" data-our-price="2.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/OKRA.webp" class="card-img-top" alt="Okra">
+                <div class="card-body">
+                    <h5 class="card-title">Okra</h5>
+                    <span class="badge rounded-pill bg-danger text-white">Fast selling</span>
+                    <p class="card-text">Fresh and nutritious okra, also known as lady's finger.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Okra" data-price="3.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.50" data-our-price="3.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/BRINJAL.webp" class="card-img-top" alt="Brinjal">
+                <div class="card-body">
+                    <h5 class="card-title">Brinjal / Eggplant</h5>
+                    <span class="badge rounded-pill bg-danger text-white">Fast selling</span>
+                    <p class="card-text">Fresh and delicious brinjals, also known as eggplants.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Brinjal" data-price="2.75">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.25" data-our-price="2.75">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Amaranth leaves.webp" class="card-img-top" alt="Amaranth leaves">
+                <div class="card-body">
+                    <h5 class="card-title">Amaranth leaves</h5>
+                    <span class="badge rounded-pill bg-danger text-white">Fast selling</span>
+                    <p class="card-text">Fresh and nutritious amaranth leaves.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Amaranth leaves" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Potato.webp" class="card-img-top" alt="Potato">
+                <div class="card-body">
+                    <h5 class="card-title">Potato</h5>
+                    <span class="badge rounded-pill bg-primary text-white">New Item</span>
+                    <p class="card-text">Fresh and versatile potatoes.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Potato" data-price="1.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Beetroot.webp" class="card-img-top" alt="Beetroot">
+                <div class="card-body">
+                    <h5 class="card-title">Beetroot</h5>
+                    <span class="badge rounded-pill bg-primary text-white">New Item</span>
+                    <p class="card-text">Fresh and nutritious beetroot.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Beetroot" data-price="2.25">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.75" data-our-price="2.25">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+                    
+
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Cucumber.webp" class="card-img-top" alt="Cucumber">
+                <div class="card-body">
+                    <h5 class="card-title">Cucumber</h5>
+                    <span class="badge rounded-pill bg-primary text-white">New Item</span>
+                    <p class="card-text">Fresh and crunchy cucumbers.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Cucumber" data-price="1.75">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.75">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Bottle gourd.webp" class="card-img-top" alt="Bottle gourd">
+                <div class="card-body">
+                    <h5 class="card-title">Bottle gourd</h5>
+                    <span class="badge rounded-pill bg-primary text-white">New Item</span>
+                    <p class="card-text">Fresh and nutritious bottle gourd.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Bottle gourd" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Bitter gourd.jpg" class="card-img-top" alt="Bitter gourd">
+                <div class="card-body">
+                    <h5 class="card-title">Bitter gourd</h5>
+                    <span class="badge rounded-pill bg-primary text-white">New Item</span>
+                    <p class="card-text">Fresh and bitter gourd, packed with nutrients.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Bitter gourd" data-price="2.25">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.75" data-our-price="2.25">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Roselle leaves.webp" class="card-img-top" alt="Roselle leaves">
+                <div class="card-body">
+                    <h5 class="card-title">Roselle leaves</h5>
+                    <p class="card-text">Fresh and tangy roselle leaves, great for culinary use.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Roselle leaves" data-price="1.80">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.80">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Spinach.webp" class="card-img-top" alt="Spinach">
+                <div class="card-body">
+                    <h5 class="card-title">Spinach</h5>
+                    <p class="card-text">Fresh and nutritious spinach, perfect for salads and cooking.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Spinach" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Broad beans.webp" class="card-img-top" alt="Broad beans">
+                <div class="card-body">
+                    <h5 class="card-title">Broad beans</h5>
+                    <p class="card-text">Fresh and nutritious broad beans, ideal for various culinary uses.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Broad beans" data-price="3.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.50" data-our-price="3.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Sweet potato.webp" class="card-img-top" alt="Sweet potato">
+                <div class="card-body">
+                    <h5 class="card-title">Sweet potato</h5>
+                    <p class="card-text">Fresh and nutritious sweet potatoes, rich in vitamins.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Sweet potato" data-price="2.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.00" data-our-price="2.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Ridge gourd.webp" class="card-img-top" alt="Ridge gourd">
+                <div class="card-body">
+                    <h5 class="card-title">Ridge gourd</h5>
+                    <p class="card-text">Fresh and nutritious ridge gourd, ideal for various culinary uses.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Ridge gourd" data-price="1.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Drumstick.webp" class="card-img-top" alt="Drumstick">
+                <div class="card-body">
+                    <h5 class="card-title">Drumstick</h5>
+                    <p class="card-text">Fresh and nutritious drumstick, great for curries and stews.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Drumstick" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Onion.webp" class="card-img-top" alt="Onion">
+                <div class="card-body">
+                    <h5 class="card-title">Onion</h5>
+                    <p class="card-text">Fresh and pungent onions, essential in many dishes.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Onion" data-price="1.20">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="1.50" data-our-price="1.20">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Raw banana.webp" class="card-img-top" alt="Raw banana">
+                <div class="card-body">
+                    <h5 class="card-title">Raw banana</h5>
+                    <p class="card-text">Fresh and versatile raw bananas, great for cooking or frying.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Raw banana" data-price="1.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Cauliflower.webp" class="card-img-top" alt="Cauliflower">
+                <div class="card-body">
+                    <h5 class="card-title">Cauliflower</h5>
+                    <p class="card-text">Fresh and nutritious cauliflower, perfect for various culinary preparations.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Cauliflower" data-price="2.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="3.00" data-our-price="2.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Capsicum.webp" class="card-img-top" alt="Capsicum">
+                <div class="card-body">
+                    <h5 class="card-title">Bell pepper / Capsicum</h5>
+                    <p class="card-text">Fresh and colorful bell peppers, great for salads and cooking.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Capsicum" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Capsicum.webp" class="card-img-top" alt="Capsicum">
+                <div class="card-body">
+                    <h5 class="card-title">Bell pepper / Capsicum</h5>
+                    <p class="card-text">Fresh and colorful bell peppers, great for salads and cooking.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Capsicum" data-price="2.00">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.50" data-our-price="2.00">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./IMAGES/Cabbage.webp" class="card-img-top" alt="Cabbage">
+                <div class="card-body">
+                    <h5 class="card-title">Cabbage</h5>
+                    <p class="card-text">Fresh and nutritious cabbage, ideal for salads and stir-fries.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Cabbage" data-price="1.80">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.80">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Carrot.webp" class="card-img-top" alt="Carrot">
+                <div class="card-body">
+                    <h5 class="card-title">Carrot</h5>
+                    <p class="card-text">Fresh and crunchy carrots, great for snacking and cooking.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Carrot" data-price="1.50">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="2.00" data-our-price="1.50">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMAGES/Radish.webp" class="card-img-top" alt="Radish">
+                <div class="card-body">
+                    <h5 class="card-title">Radish</h5>
+                    <p class="card-text">Fresh and crisp radishes, perfect for salads and pickling.</p>
+                    <a href="#" class="btn btn-danger buy-btn" data-product="Radish" data-price="1.20">Buy</a>
+                    <button type="button" class="btn btn-info price-btn" data-market-price="1.50" data-our-price="1.20">Price</button>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+                    </div>
+        </div>
+        <br><br>
+        <br><br>
+        <!-- flushing ites last  -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        User Registration and Authentication
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Allow producers, consumers, and agents to create accounts and log in securely.<br>
+                        Implement user authentication to ensure only registered users can access specific features.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Producer Profile
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Enable producers to create profiles with information about their products, farming practices,
+                        and location.
+                        Allow producers to upload images and descriptions of their items for 
+                        Provide a dashboard where producers can manage their listings and inventory. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Consumer Profile
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Allow consumers to create profiles and manage their personal information, shipping addresses,
+                        and payment methods. <br>
+                        Implement a cart and checkout system for consumers to purchase products directly from producers.
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="flush-collapseFour" class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Food Waste Management
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Create a section on the website dedicated to addressing food waste. <br>
+                        Enable users (producers, consumers, or even volunteers) to report excess food or food that would
+                        otherwise go to waste. <br>
+                        Implement a system to efficiently distribute excess food to those in need in various cities.
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="flush-collapsesix" class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Agent Verification and Approval
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Agents should have the ability to visit the farms, verify hygienic practices, and approve the
+                        producers.
+                        <br>
+                        Implement a system where agents can provide a digital card or certificate to approved producers.
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Reviews and Ratings
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Allow consumers to leave reviews and ratings for producers and their products. <br>
+                        Enable agents to receive feedback from producers regarding their verification process. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Suggestions to farmers
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Allow consumers to leave reviews and ratings for producers and their products. <br>
+                        Enable agents to receive feedback from producers regarding their verification process. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
+                        crops forecasting
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Allow consumers to leave reviews and ratings for producers and their products. <br>
+                        Enable agents to receive feedback from producers regarding their verification process. <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Cart Items</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                        <!-- Cart items will be appended here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- thankyou  -->
+        
+        
+        <div class="badge bg-primary  w-100" style="font-size: 25px;">
+            <p>THANK YOU FOR VISITING US </p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            const cart = [];
+    
+            $(document).ready(function() {
+                $('.buy-btn').click(function() {
+                    const product = $(this).data('product');
+                    const price = $(this).data('price');
+                    cart.push({ product, price });
+                    alert(`${product} added to cart.`);
+                });
+    
+                $('#cartButton').click(function() {
+                    const cartItemsContainer = $('#cartItems');
+                    cartItemsContainer.empty();
+                    cart.forEach((cartItem, index) => {
+                        const listItem = `<li class="list-group-item">
+                            ${cartItem.product} - Our Price: $${cartItem.price}
+                        </li>`;
+                        cartItemsContainer.append(listItem);
+                    });
+                });
+    
+                $('.price-btn').click(function() {
+                    const marketPrice = $(this).data('market-price');
+                    const ourPrice = $(this).data('our-price');
+                    alert(`Market Price: $${marketPrice} - Our Price: $${ourPrice}`);
+                });
+            });
+            </script>
+    </div>
+</body>
+
+</html>
